@@ -71,16 +71,22 @@ const displayRandomMeal = (x) => {
       
       const div = document.createElement('div')
       div.classList.add('display-box')
-    //   const foodName = document.createElement('H1')
-      const foodName = document.createTextNode(`${meal.strMeal}`)
+      const foodName = document.createElement('h2')
+      foodName.id = 'foodTitle'
+      const foodT = document.createTextNode(`${meal.strMeal}`)
+      foodName.appendChild(foodT)
       const text1 = document.createTextNode(`${meal.strInstructions}`)
       const image = document.createElement('img')
       image.src=`${meal.strMealThumb}`
-      div.append(image)
       div.appendChild(foodName)
+      div.append(image)
       div.appendChild(text1)
       displayBox.append(div)
 
       
     })
   }
+  const reset = () => {
+    document.getElementById('display-box').innerHTML = ''
+    
+    }

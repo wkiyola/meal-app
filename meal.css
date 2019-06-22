@@ -3,15 +3,22 @@
 }
 h1{
     color: white;
-    text-align: center;
-    font-size: 60px;
+    /* text-align: center; */
+    font-size: 100px;
 }
-
 
 p{
     text-align: center;
     color: lightsteelblue;
     font-size: 30px;
+    font-style: italic;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width: 160px;
 }
 img{
     height: 230px;
@@ -19,15 +26,39 @@ img{
     margin: 20px;
     border-radius: 20px;
 }
-button{
+#button{
     padding: 5px;
+    height: 30px;
     font-size: 15px;
     color: white;
     border-radius: 30px;
-    background: orange;
+    background: green;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
 
+}
+#refresh{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    color: white;
+    border-radius: 70px;
+    background: orange;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+#refresh:hover{
+    background: brown;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#button:hover{
+    background: brown;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #search{
@@ -35,20 +66,29 @@ button{
     margin-top: 10%;
     font-size: 30px;
 }
-input{
-    border: 4px solid orange;
-    width: 500px;
-    height: 30px;
-    padding: 10px;
-}
 #display-box{
     border-radius: 30px;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
     padding: 10px;
-    border: 2px solid gray;
+    border: 2px solid orange; 
     height: 100%;
-    width: 80%;
-}
+    width: 95%;
+    }
+    .display-box{
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 95%;
+    }
